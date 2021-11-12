@@ -1,6 +1,22 @@
-public class AreaRectangle {
-    public static int getArea(int width, int length) {
-        int area = width * length;
-        return area;
+package com.shapes;
+
+public class Rectangle {
+
+    private double width;
+    private double length;
+
+    public Rectangle(double width,double length) {
+        this.width=width;
+        this.length=length;
+    }
+
+    public  double area() {
+        double areaOfRectangle = width * length;
+        return areaOfRectangle;
+    }
+
+    public double perimeter() {
+        double perimeterOfRectangle = 2 * (length+width);
+        return perimeterOfRectangle;
     }
 }
